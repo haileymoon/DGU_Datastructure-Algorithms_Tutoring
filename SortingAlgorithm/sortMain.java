@@ -1,3 +1,5 @@
+package SortingAlgorithm;
+
 public class sortMain {
     public static void main(String[] args) {
         sortingAlgorithms sort = new sortingAlgorithms();

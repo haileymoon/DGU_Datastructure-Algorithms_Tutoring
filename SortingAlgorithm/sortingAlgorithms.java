@@ -1,3 +1,5 @@
+package SortingAlgorithm;
+
 public class sortingAlgorithms {
     
     //Bubble sort - 옆에랑 비교, 개수만큼 반복

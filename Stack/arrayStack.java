@@ -11,7 +11,7 @@ public class arrayStack {
 
     public arrayStack(int size){
         this.top = -1;
-        this.size = size;
+        this.size = size; 
         this.array = new char[this.size];
     }
 

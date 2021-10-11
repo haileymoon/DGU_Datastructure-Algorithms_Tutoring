@@ -3,38 +3,38 @@ package Stack;
 import java.util.NoSuchElementException;
 
 /**
- * linkedListStack
+ * make stack using linkedList
  */
 public class linkedListStack {
 
     // Create Node that has a data, and the next node
     private static class Node{
-        private Object data;
+        private char data;
         private Node next;
 
-        public Node(Object data){
+        public Node(char data){
             this.data = data;
             this.next = null;
         }
     }
     private Node top;
-    
-    public Object pop(){
+
+    public char pop(){
         if(top == null) 
             throw new NoSuchElementException();
-        Object item = top.data;
+        char item = top.data;
         top = top.next;
 
         return item;
     }
     
-    public void push(Object item){
+    public void push(char item){
         Node new_node = new Node(item);
         new_node.next = top;
         top = new_node;
     }
 
-    public Object peek() {
+    public char peek() {
         if(top == null){
             throw new NoSuchElementException();
         } return top.data;
@@ -43,5 +43,6 @@ public class linkedListStack {
     public boolean isEmpty(){
         return top == null;
     }
+
     
 }

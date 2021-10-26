@@ -17,19 +17,19 @@ public class checkBrackets {
                     stack.push(c);
                     break;
                 case ')':
-                    if (stack.isEmpty() || (c = stack.pop()) != '(') {
+                    if (stack.isEmpty() || (stack.pop()) != '(') {
                         wrongflag = true;
                     }
                     break;
 
                 case '}':
-                    if (stack.isEmpty() || (c = stack.pop()) != '{') {
+                    if (stack.isEmpty() || (stack.pop()) != '{') {
                         wrongflag = true;
                         }
                     break;
 
                 case ']':
-                    if (stack.isEmpty() || (c = stack.pop()) != '[') {
+                    if (stack.isEmpty() || (stack.pop()) != '[') {
                         wrongflag = true;
                     }
                     break;    
